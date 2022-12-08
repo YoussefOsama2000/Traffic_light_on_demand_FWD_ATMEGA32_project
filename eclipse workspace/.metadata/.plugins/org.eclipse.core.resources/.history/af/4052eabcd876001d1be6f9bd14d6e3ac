@@ -1,0 +1,153 @@
+ /******************************************************************************
+ *
+ * Module: application
+ *
+ * File Name: app.c
+ *
+ * Description: source file for the application
+ *
+ * Author: Youssef osama
+ *
+ *******************************************************************************/
+/***************************includes**************************************************/
+#include "app.h"
+#include "../push_button_module/pushButton.h"
+#include "../timer1_module/timer1.h"
+/****************************functions declaration**************************************************/
+void pushButtonFunction (void);
+void timerFunction(void);
+void carsNormalMode(void);
+void carsMove(void);
+void carsWillStop(void);
+void carsStop(void);
+void carsWillMove(void);
+/****************************global variables**************************************************/
+unsigned int g_tickCounter=0;
+unsigned char g_button_pressed=0;
+/****************************functions definitions**************************************************/
+void application(void){
+initializeSystem();
+while(1){
+carsNormalMode();
+}
+}
+void initializeSystem(void){
+/*initialization of bush button*/
+	PUSHBUTTON_init(PUSHBUTTON_RISING);
+	PUSHBUTTON_setISR(pushButtonFunction);
+/*initialization of LEDS and turning them off*/
+	GPIO_setupPinDirection(carsPort, carsGreenPin, PIN_OUTPUT);
+	GPIO_writePin(carsPort, carsGreenPin, LOGIC_LOW);
+	GPIO_setupPinDirection(carsPort,carsYellowPin, PIN_OUTPUT);
+	GPIO_writePin(carsPort, carsYellowPin, LOGIC_LOW);
+	GPIO_setupPinDirection(carsPort,carsRedPin,PIN_OUTPUT);
+	GPIO_writePin(carsPort, carsRedPin, LOGIC_LOW);
+	GPIO_setupPinDirection(pedestriansPort, pedestriansGreenPin, PIN_OUTPUT);
+	GPIO_writePin(pedestriansPort, pedestriansGreenPin, LOGIC_LOW);
+	GPIO_setupPinDirection(pedestriansPort, pedestriansYellowPin, PIN_OUTPUT);
+	GPIO_writePin(pedestriansPort, pedestriansYellowPin, LOGIC_LOW);
+	GPIO_setupPinDirection(pedestriansPort, pedestriansRedPin, PIN_OUTPUT);
+	GPIO_writePin(pedestriansPort, pedestriansRedPin, LOGIC_LOW);
+/*initializing timer*/
+	{
+		Timer1_ConfigType config;
+		config.mode=Timer1_compareMode;
+		config.initial_value=0;
+		/*this values will make timer fire every 0.5 second*/
+		config.compare_value=15625/4;
+		config.prescaler=Timer1_clk_1024_prescaler;
+		Timer1_setCallBack(timerFunction);
+		Timer1_init(&config);
+	}
+}
+void pushButtonFunction(void){
+g_button_pressed=1;
+}
+void timerFunction(void){
+g_tickCounter++;
+}
+void carsNormalMode(void){
+carsMove();
+carsWillStop();
+carsStop();
+carsWillMove();
+
+}
+void carsMove(void){
+	/*Cars move*/
+	GPIO_writePin(carsPort, carsGreenPin, LOGIC_HIGH);
+	GPIO_writePin(carsPort, carsYellowPin, LOGIC_LOW);
+	GPIO_writePin(carsPort, carsRedPin, LOGIC_LOW);
+	/*pedestrian stop*/
+	GPIO_writePin(pedestriansPort, pedestriansGreenPin, LOGIC_LOW);
+	GPIO_writePin(pedestriansPort, pedestriansYellowPin, LOGIC_LOW);
+	GPIO_writePin(pedestriansPort, pedestriansRedPin, LOGIC_HIGH);
+	while(g_tickCounter<10){
+		if(g_button_pressed==1)
+			return;
+	}
+	g_tickCounter=0;
+	g_button_pressed=0;
+}
+void carsWillStop(void){
+	/*Cars will stop*/
+	GPIO_writePin(carsPort, carsGreenPin, LOGIC_LOW);
+	GPIO_writePin(carsPort, carsYellowPin, LOGIC_HIGH);
+	GPIO_writePin(carsPort, carsRedPin, LOGIC_LOW);
+	/*pedestrian will move*/
+	GPIO_writePin(pedestriansPort, pedestriansGreenPin, LOGIC_LOW);
+	GPIO_writePin(pedestriansPort, pedestriansYellowPin, LOGIC_HIGH);
+	GPIO_writePin(pedestriansPort, pedestriansRedPin, LOGIC_LOW);
+	while(g_tickCounter<10){
+		if(g_tickCounter%2)
+		{
+			GPIO_writePin(carsPort, carsYellowPin, LOGIC_HIGH);
+			GPIO_writePin(pedestriansPort, pedestriansYellowPin, LOGIC_HIGH);
+		}else
+		{
+		GPIO_writePin(carsPort, carsYellowPin, LOGIC_LOW);
+		GPIO_writePin(pedestriansPort, pedestriansYellowPin, LOGIC_LOW);
+		}
+	}
+	g_button_pressed=0;
+	g_tickCounter=0;
+}
+void carsWillMove(void){
+	/*Cars will stop*/
+	GPIO_writePin(carsPort, carsGreenPin, LOGIC_LOW);
+	GPIO_writePin(carsPort, carsYellowPin, LOGIC_HIGH);
+	GPIO_writePin(carsPort, carsRedPin, LOGIC_LOW);
+	/*pedestrian will move*/
+	GPIO_writePin(pedestriansPort, pedestriansGreenPin, LOGIC_LOW);
+	GPIO_writePin(pedestriansPort, pedestriansYellowPin, LOGIC_HIGH);
+	GPIO_writePin(pedestriansPort, pedestriansRedPin, LOGIC_LOW);
+	while(g_tickCounter<10){
+		if(g_tickCounter%2)
+		{
+			GPIO_writePin(carsPort, carsYellowPin, LOGIC_HIGH);
+			GPIO_writePin(pedestriansPort, pedestriansYellowPin, LOGIC_HIGH);
+		}else
+		{
+		GPIO_writePin(carsPort, carsYellowPin, LOGIC_LOW);
+		GPIO_writePin(pedestriansPort, pedestriansYellowPin, LOGIC_LOW);
+		}
+		if(g_button_pressed==1)
+			return;
+	}
+
+	g_tickCounter=0;
+}
+void carsStop(void){
+	/*Cars stop*/
+	GPIO_writePin(carsPort, carsGreenPin, LOGIC_LOW);
+	GPIO_writePin(carsPort, carsYellowPin, LOGIC_LOW);
+	GPIO_writePin(carsPort, carsRedPin, LOGIC_HIGH);
+	/*pedestrian cross*/
+	GPIO_writePin(pedestriansPort, pedestriansGreenPin, LOGIC_HIGH);
+	GPIO_writePin(pedestriansPort, pedestriansYellowPin, LOGIC_LOW);
+	GPIO_writePin(pedestriansPort, pedestriansRedPin, LOGIC_LOW);
+	/*no action will be taken if button pressed pedestrians was just crossing*/
+	while(g_tickCounter<10){}
+	g_button_pressed=0;
+	g_tickCounter=0;
+}

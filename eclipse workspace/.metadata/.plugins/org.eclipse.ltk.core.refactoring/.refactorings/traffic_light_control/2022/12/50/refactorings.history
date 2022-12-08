@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;traffic_light_control/timer1 module&apos; to &apos;timer1_module&apos;" description="Rename resource &apos;timer1 module&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="timer1 module" name="timer1_module" stamp="1670355480338" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;traffic_light_control/gpio module&apos; to &apos;gpio_module&apos;" description="Rename resource &apos;gpio module&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="gpio module" name="gpio_module" stamp="1670355490474" updateReferences="true"/>
+</session>

@@ -1,0 +1,20 @@
+ /******************************************************************************
+ *
+ * Module: application
+ *
+ * File Name: app.c
+ *
+ * Description: source file for the application
+ *
+ * Author: Youssef osama
+ *
+ *******************************************************************************/
+/***************************includes**************************************************/
+#include "app.h"
+#include "../push_button_module/pushButton.h"
+#include "../timer1_module/timer1.h"
+
+/****************************functions definitions**************************************************/
+void application(void){
+
+}

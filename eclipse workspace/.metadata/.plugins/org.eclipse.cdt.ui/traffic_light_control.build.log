@@ -1,0 +1,38 @@
+11:16:51 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./timer1_module/timer1.o  ./push_button_module/pushButton.o  ./gpio_module/gpio.o  ./application/app.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3336 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+11:16:52 Build Finished. 0 errors, 0 warnings. (took 555ms)
+

@@ -1,0 +1,56 @@
+ /******************************************************************************
+ *
+ * Module: application
+ *
+ * File Name: app.c
+ *
+ * Description: source file for the application
+ *
+ * Author: Youssef osama
+ *
+ *******************************************************************************/
+/***************************includes**************************************************/
+#include "app.h"
+#include "../push_button_module/pushButton.h"
+#include "../timer1_module/timer1.h"
+/****************************functions declaration**************************************************/
+void pushButtonFunction (void);
+/****************************functions definitions**************************************************/
+void application(void){
+initializeSystem();
+}
+void initializeSystem(void){
+/*initialization of bush button*/
+	PUSHBUTTON_init(PUSHBUTTON_RISING);
+	PUSHBUTTON_setISR(pushButtonFunction);
+/*initialization of LEDS and turning them off*/
+	GPIO_setupPinDirection(carsPort, carsGreenPin, PIN_OUTPUT);
+	GPIO_writePin(carsPort, carsGreenPin, LOGIC_LOW);
+	GPIO_setupPinDirection(carsPort,carsYellowPin, PIN_OUTPUT);
+	GPIO_writePin(carsPort, carsYellowPin, LOGIC_LOW);
+	GPIO_setupPinDirection(carsPort,carsRedPin,PIN_OUTPUT);
+	GPIO_writePin(carsPort, carsRedPin, LOGIC_LOW);
+	GPIO_setupPinDirection(pedestriansPort, pedestriansGreenPin, PIN_OUTPUT);
+	GPIO_writePin(pedestriansPort, pedestriansGreenPin, LOGIC_LOW);
+	GPIO_setupPinDirection(pedestriansPort, pedestriansYellowPin, PIN_OUTPUT);
+	GPIO_writePin(pedestriansPort, pedestriansYellowPin, LOGIC_LOW);
+	GPIO_setupPinDirection(pedestriansPort, pedestriansRedPin, PIN_OUTPUT);
+	GPIO_writePin(pedestriansPort, pedestriansRedPin, LOGIC_LOW);
+/*initializing timer*/
+	{
+		Timer1_ConfigType config;
+		config.mode=Timer1_compareMode;
+		config.initial_value=0;
+		/*this values will make timer fire every 1 second*/
+		config.compare_value=15625;
+		config.prescaler=Timer1_clk_1024_prescaler;
+		Timer1_setCallBack(a_ptr);
+		Timer1_init(&config);
+	}
+}
+void pushButtonFunction(void){
+
+}
+void timerFunction(void){
+
+}

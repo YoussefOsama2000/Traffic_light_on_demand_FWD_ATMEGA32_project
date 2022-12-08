@@ -1,0 +1,36 @@
+ /******************************************************************************
+ *
+ * Module: PushButton
+ *
+ * File Name: pushButton.c
+ *
+ * Description: source file for pushButton driver
+ *
+ * Author: Youssef Osama
+ *
+ *******************************************************************************/
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include "pushButton.h"
+#include "../gpio_module/gpio.h"
+#include "../std_types.h"
+/*global variable to carry the address of the callback function*/
+void (*g_fun_ptr)(void)=NULL_PTR;
+/*this function will be called if the interrupt is fired*/
+ISR(INT1_vect){
+if(g_fun_ptr!=NULL_PTR){
+	g_fun_ptr();
+}
+}
+/*this function is to initialize the push button*/
+void PUSHBUTTON_init(PUSHBUTTON_interruptEvent event){
+	/*enabling global interrupts*/
+	SREG  |= (1<<7);
+	/*setting PD2-INT0 as input pin*/
+	GPIO_setupPinDirection(PORTD_ID, PIN2_ID, PIN_INPUT);
+	/*setting INT0 at raising edge*/
+	MCUCR = (MCUCR &~((1<<ISC01)|(1<<ISC00)))|(event);
+	/*enabling external interrupt INT0*/
+	GICR  |= (1<<INT0);
+	return;
+}

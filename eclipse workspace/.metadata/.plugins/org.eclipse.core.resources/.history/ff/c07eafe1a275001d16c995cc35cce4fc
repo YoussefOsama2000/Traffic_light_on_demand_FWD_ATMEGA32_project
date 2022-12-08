@@ -1,0 +1,23 @@
+ /******************************************************************************
+ *
+ * Module: PushButton
+ *
+ * File Name: pushButton.c
+ *
+ * Description: source file for pushButton driver
+ *
+ * Author: Youssef Osama
+ *
+ *******************************************************************************/
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include "../std_types.h"
+/*global variable to carry the address of the callback function*/
+void (*g_fun_ptr)(void)=NULL_PTR;
+/*this function will be called if the interrupt is fired*/
+ISR(INT1_vect){
+if(g_fun_ptr!=NULL_PTR){
+	g_fun_ptr();
+}
+}
+
