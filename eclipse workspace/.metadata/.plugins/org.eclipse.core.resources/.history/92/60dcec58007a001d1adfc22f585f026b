@@ -1,0 +1,22 @@
+ /******************************************************************************
+ *
+ * Module: led
+ *
+ * File Name: led.h
+ *
+ * Description: header file for led driver
+ *
+ * Author: Youssef Osama
+ *
+ *******************************************************************************/
+
+#ifndef LED_H_
+#define LED_H_
+#include "../../std_types.h"
+typedef enum {ERROR,DONE} LED_return;
+typedef enum {LED_TURN_OFF,_LED_TURN_ON} LED_state;
+/*this function is made to setup the LEDS*/
+LED_return LED_setup(uint8 port,uint8 pin);
+/*this function is made to control LEDS*/
+LED_return LED_control(uint8 port,uint8 pin,LED_state state);
+#endif

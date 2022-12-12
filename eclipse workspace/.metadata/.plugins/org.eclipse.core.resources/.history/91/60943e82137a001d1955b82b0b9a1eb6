@@ -1,0 +1,43 @@
+/*this part of code will test led module by trying to turn on led at pin 1 port A*/
+#include "../HAL/led_module/led.h"
+void test_LED_mudule(){
+	LED_setup(1, 1);
+	LED_control(1, 1, LED_TURN_ON);
+}
+
+
+
+
+
+
+/*this part of code will test push button module by trying to turn on led when button is pressed*/
+#include "../HAL/push_button_module/pushButton.h"
+void test_PUSHBUTTON_callback(){
+	test_LED_mudule();
+}
+void test_PUSHBUTTON_module(){
+	/*Initializing push button at rising edge event*/
+	PUSHBUTTON_init(PUSHBUTTON_RISING);
+	/*setting callback function for the button*/
+	PUSHBUTTON_setISR(test_PUSHBUTTON_callback);
+}
+
+
+
+
+
+
+/*this part of code will test timer1 module by trying to turn on led when the timer is fired*/
+#include "../MCAL/timer1_module/timer1.h"
+void test_TIMER1_callback(){
+	test_LED_module();
+}
+void test_TIMER1_module(){
+	Timer1_setCallBack(test_TIMER1_callback);
+	Timer1_ConfigType* config;
+	config->initial_value=0;
+	config->compare_value=10000;
+	config->mode=Timer1_compareMode;
+	config->prescaler=Timer1_clk_256_prescaler;
+	Timer1_init(config);
+}

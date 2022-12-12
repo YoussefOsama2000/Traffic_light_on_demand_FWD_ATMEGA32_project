@@ -1034,3 +1034,2249 @@ Data:          7 bytes (0.3% Full)
 
 Finished building: sizedummy
  
+10:53:55 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+In file included from ../application/app.h:15,
+                 from ../application/app.c:13:
+../application/../MCAL/gpio_module/gpio.h:16:26: error: ../std_types.h: No such file or directory
+In file included from ../application/app.h:15,
+                 from ../application/app.c:13:
+../application/../MCAL/gpio_module/gpio.h:60: error: expected ')' before 'port_num'
+../application/../MCAL/gpio_module/gpio.h:68: error: expected ')' before 'port_num'
+../application/../MCAL/gpio_module/gpio.h:75: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_readPin'
+../application/../MCAL/gpio_module/gpio.h:84: error: expected ')' before 'port_num'
+../application/../MCAL/gpio_module/gpio.h:93: error: expected ')' before 'port_num'
+../application/../MCAL/gpio_module/gpio.h:100: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_readPort'
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:39: warning: implicit declaration of function 'GPIO_setupPinDirection'
+../application/app.c:40: warning: implicit declaration of function 'GPIO_writePin'
+../application/app.c:40: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+../application/app.c: In function 'carsMove':
+../application/app.c:78: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../application/app.c:79: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c: In function 'carsWillStop':
+../application/app.c:94: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c:95: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../application/app.c: In function 'carsWillMove':
+../application/app.c:117: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c:118: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../application/app.c: In function 'carsStop':
+../application/app.c:142: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c:144: error: 'LOGIC_HIGH' undeclared (first use in this function)
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:54:14 **** Clean-only build of configuration Debug for project traffic_light_control ****
+make clean 
+rm -rf  traffic_light_control.hex  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./main.o  sizedummy  traffic_light_control.lss  ./application/app.d  ./MCAL/timer1_module/timer1.d  ./MCAL/gpio_module/gpio.d  ./HAL/push_button_module/pushButton.d  ./main.d  traffic_light_control.elf
+ 
+10:54:14 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+In file included from ../application/app.h:15,
+                 from ../application/app.c:13:
+../application/../MCAL/gpio_module/gpio.h:16:26: error: ../std_types.h: No such file or directory
+In file included from ../application/app.h:15,
+                 from ../application/app.c:13:
+../application/../MCAL/gpio_module/gpio.h:60: error: expected ')' before 'port_num'
+../application/../MCAL/gpio_module/gpio.h:68: error: expected ')' before 'port_num'
+../application/../MCAL/gpio_module/gpio.h:75: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_readPin'
+../application/../MCAL/gpio_module/gpio.h:84: error: expected ')' before 'port_num'
+../application/../MCAL/gpio_module/gpio.h:93: error: expected ')' before 'port_num'
+../application/../MCAL/gpio_module/gpio.h:100: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_readPort'
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:39: warning: implicit declaration of function 'GPIO_setupPinDirection'
+../application/app.c:40: warning: implicit declaration of function 'GPIO_writePin'
+../application/app.c:40: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+../application/app.c: In function 'carsMove':
+../application/app.c:78: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../application/app.c:79: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c: In function 'carsWillStop':
+../application/app.c:94: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c:95: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../application/app.c: In function 'carsWillMove':
+../application/app.c:117: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c:118: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../application/app.c: In function 'carsStop':
+../application/app.c:142: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c:144: error: 'LOGIC_HIGH' undeclared (first use in this function)
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:54:35 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+In file included from ../application/app.h:15,
+                 from ../application/app.c:13:
+../application/../MCAL/gpio_module/gpio.h:16:26: error: ../std_types.h: No such file or directory
+In file included from ../application/app.h:15,
+                 from ../application/app.c:13:
+../application/../MCAL/gpio_module/gpio.h:60: error: expected ')' before 'port_num'
+../application/../MCAL/gpio_module/gpio.h:68: error: expected ')' before 'port_num'
+../application/../MCAL/gpio_module/gpio.h:75: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_readPin'
+../application/../MCAL/gpio_module/gpio.h:84: error: expected ')' before 'port_num'
+../application/../MCAL/gpio_module/gpio.h:93: error: expected ')' before 'port_num'
+../application/../MCAL/gpio_module/gpio.h:100: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_readPort'
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:39: warning: implicit declaration of function 'GPIO_setupPinDirection'
+../application/app.c:40: warning: implicit declaration of function 'GPIO_writePin'
+../application/app.c:40: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+../application/app.c: In function 'carsMove':
+../application/app.c:78: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../application/app.c:79: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c: In function 'carsWillStop':
+../application/app.c:94: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c:95: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../application/app.c: In function 'carsWillMove':
+../application/app.c:117: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c:118: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../application/app.c: In function 'carsStop':
+../application/app.c:142: error: 'LOGIC_LOW' undeclared (first use in this function)
+../application/app.c:144: error: 'LOGIC_HIGH' undeclared (first use in this function)
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:54:56 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:55:08 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:55:18 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:55:52 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:56:36 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:56:52 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:57:15 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:57:43 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:58:34 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:58:51 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:14:46: error: ../push_button_module/pushButton.h: No such file or directory
+../application/app.c:15:37: error: ../timer1_module/timer1.h: No such file or directory
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:36: error: 'PUSHBUTTON_RISING' undeclared (first use in this function)
+../application/app.c:36: error: (Each undeclared identifier is reported only once
+../application/app.c:36: error: for each function it appears in.)
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+../application/app.c:53: error: 'Timer1_ConfigType' undeclared (first use in this function)
+../application/app.c:53: error: expected ';' before 'config'
+../application/app.c:54: error: 'config' undeclared (first use in this function)
+../application/app.c:54: error: 'Timer1_compareMode' undeclared (first use in this function)
+../application/app.c:58: error: 'Timer1_clk_1024_prescaler' undeclared (first use in this function)
+../application/app.c:59: warning: implicit declaration of function 'Timer1_setCallBack'
+../application/app.c:60: warning: implicit declaration of function 'Timer1_init'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:59:26 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building file: ../MCAL/timer1_module/timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/timer1_module/timer1.d" -MT"MCAL/timer1_module/timer1.o" -c -o "MCAL/timer1_module/timer1.o" "../MCAL/timer1_module/timer1.c"
+Finished building: ../MCAL/timer1_module/timer1.c
+ 
+Building file: ../MCAL/gpio_module/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/gpio_module/gpio.d" -MT"MCAL/gpio_module/gpio.o" -c -o "MCAL/gpio_module/gpio.o" "../MCAL/gpio_module/gpio.c"
+../MCAL/gpio_module/gpio.c:15:30: error: ../common_macros.h: No such file or directory
+../MCAL/gpio_module/gpio.c: In function 'GPIO_setupPinDirection':
+../MCAL/gpio_module/gpio.c:41: warning: implicit declaration of function 'SET_BIT'
+../MCAL/gpio_module/gpio.c:45: warning: implicit declaration of function 'CLEAR_BIT'
+../MCAL/gpio_module/gpio.c: In function 'GPIO_readPin':
+../MCAL/gpio_module/gpio.c:171: warning: implicit declaration of function 'BIT_IS_SET'
+make: *** [MCAL/gpio_module/gpio.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:59:54 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../MCAL/gpio_module/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/gpio_module/gpio.d" -MT"MCAL/gpio_module/gpio.o" -c -o "MCAL/gpio_module/gpio.o" "../MCAL/gpio_module/gpio.c"
+Finished building: ../MCAL/gpio_module/gpio.c
+ 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+../HAL/push_button_module/pushButton.c:16:26: error: ../std_types.h: No such file or directory
+make: *** [HAL/push_button_module/pushButton.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:00:22 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+Finished building: ../HAL/push_button_module/pushButton.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3336 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:06:38 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+../HAL/push_button_module/pushButton.c:26: error: conflicting types for 'PUSHBUTTON_init'
+../HAL/push_button_module/pushButton.h:18: error: previous declaration of 'PUSHBUTTON_init' was here
+../HAL/push_button_module/pushButton.c:38: error: conflicting types for 'PUSHBUTTON_setISR'
+../HAL/push_button_module/pushButton.h:20: error: previous declaration of 'PUSHBUTTON_setISR' was here
+make: *** [HAL/push_button_module/pushButton.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:07:38 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+Finished building: ../HAL/push_button_module/pushButton.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3340 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:16:54 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+In file included from ../HAL/led_module/led.c:13:
+../HAL/led_module/led.h:16: warning: useless storage class specifier in empty declaration
+../HAL/led_module/led.h:18: error: expected ')' before 'port'
+../HAL/led_module/led.h:20: error: expected ')' before 'port'
+../HAL/led_module/led.c: In function 'LED_control':
+../HAL/led_module/led.c:26: warning: control reaches end of non-void function
+make: *** [HAL/led_module/led.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:17:20 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+In file included from ../HAL/led_module/led.c:13:
+../HAL/led_module/led.h:16: warning: useless storage class specifier in empty declaration
+../HAL/led_module/led.h:18: error: expected ')' before 'port'
+../HAL/led_module/led.h:20: error: expected ')' before 'port'
+../HAL/led_module/led.c: In function 'LED_control':
+../HAL/led_module/led.c:26: warning: control reaches end of non-void function
+make: *** [HAL/led_module/led.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:18:10 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+In file included from ../HAL/led_module/led.c:13:
+../HAL/led_module/led.h:18: error: expected ')' before 'port'
+../HAL/led_module/led.h:20: error: expected ')' before 'port'
+../HAL/led_module/led.c: In function 'LED_control':
+../HAL/led_module/led.c:27: warning: control reaches end of non-void function
+make: *** [HAL/led_module/led.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:18:50 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+../HAL/led_module/led.c: In function 'LED_control':
+../HAL/led_module/led.c:27: warning: control reaches end of non-void function
+Finished building: ../HAL/led_module/led.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3414 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:18:56 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+../HAL/led_module/led.c: In function 'LED_control':
+../HAL/led_module/led.c:26: warning: control reaches end of non-void function
+Finished building: ../HAL/led_module/led.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3414 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:19:05 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3414 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:19:18 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+../HAL/led_module/led.c: In function 'LED_control':
+../HAL/led_module/led.c:26: warning: control reaches end of non-void function
+Finished building: ../HAL/led_module/led.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3414 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:19:45 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+../HAL/led_module/led.c: In function 'LED_control':
+../HAL/led_module/led.c:26: warning: control reaches end of non-void function
+Finished building: ../HAL/led_module/led.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3414 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:20:36 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+../HAL/led_module/led.c: In function 'LED_control':
+../HAL/led_module/led.c:26: warning: control reaches end of non-void function
+Finished building: ../HAL/led_module/led.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3414 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:20:53 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+../HAL/led_module/led.c: In function 'LED_control':
+../HAL/led_module/led.c:26: warning: control reaches end of non-void function
+Finished building: ../HAL/led_module/led.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3414 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:22:35 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+../HAL/led_module/led.c:23: error: conflicting types for 'LED_control'
+../HAL/led_module/led.h:21: error: previous declaration of 'LED_control' was here
+make: *** [HAL/led_module/led.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:22:51 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+Finished building: ../HAL/led_module/led.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:27:49 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:28:46 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+Finished building: ../HAL/push_button_module/pushButton.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:30:07 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+In file included from ../application/app.c:14:
+../application/../HAL/push_button_module/pushButton.h:16: error: nested redefinition of 'enum PUSHBUTTON_return'
+../application/../HAL/push_button_module/pushButton.h:16: error: redeclaration of 'enum PUSHBUTTON_return'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:30:21 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+In file included from ../application/app.c:14:
+../application/../HAL/push_button_module/pushButton.h:15: warning: useless storage class specifier in empty declaration
+../application/../HAL/push_button_module/pushButton.h:16: error: nested redefinition of 'enum PUSHBUTTON_return'
+../application/../HAL/push_button_module/pushButton.h:16: error: redeclaration of 'enum PUSHBUTTON_return'
+../application/../HAL/push_button_module/pushButton.h:16: warning: useless storage class specifier in empty declaration
+../application/../HAL/push_button_module/pushButton.h:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PUSHBUTTON_init'
+../application/../HAL/push_button_module/pushButton.h:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PUSHBUTTON_setISR'
+../application/app.c: In function 'initializeSystem':
+../application/app.c:36: warning: implicit declaration of function 'PUSHBUTTON_init'
+../application/app.c:37: warning: implicit declaration of function 'PUSHBUTTON_setISR'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:30:26 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+Finished building: ../HAL/push_button_module/pushButton.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:31:39 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+Finished building: ../HAL/push_button_module/pushButton.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:31:46 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+Finished building: ../HAL/push_button_module/pushButton.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:31:51 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+Finished building: ../HAL/push_button_module/pushButton.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:31:58 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+Finished building: ../HAL/push_button_module/pushButton.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:32:33 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+Finished building: ../HAL/push_button_module/pushButton.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:32:52 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+Finished building: ../HAL/push_button_module/pushButton.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:34:48 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+Finished building: ../HAL/push_button_module/pushButton.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:35:25 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building file: ../HAL/push_button_module/pushButton.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/push_button_module/pushButton.d" -MT"HAL/push_button_module/pushButton.o" -c -o "HAL/push_button_module/pushButton.o" "../HAL/push_button_module/pushButton.c"
+Finished building: ../HAL/push_button_module/pushButton.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:35:43 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+../HAL/led_module/led.c: In function 'LED_setup':
+../HAL/led_module/led.c:20: error: 'DONE' undeclared (first use in this function)
+../HAL/led_module/led.c:20: error: (Each undeclared identifier is reported only once
+../HAL/led_module/led.c:20: error: for each function it appears in.)
+../HAL/led_module/led.c:21: warning: control reaches end of non-void function
+../HAL/led_module/led.c: In function 'LED_control':
+../HAL/led_module/led.c:26: error: 'DONE' undeclared (first use in this function)
+../HAL/led_module/led.c:27: warning: control reaches end of non-void function
+make: *** [HAL/led_module/led.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:35:54 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+Finished building: ../HAL/led_module/led.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:36:12 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+Finished building: ../HAL/led_module/led.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:36:41 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:16:30: error: ../application/../HAL/led_module/: Permission denied
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:36:44 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3428 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:38:02 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c: In function 'initializeSystem':
+../application/app.c:41: error: expected ')' before 'pin'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:38:17 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c: In function 'initializeSystem':
+../application/app.c:41: error: expected ')' before 'pin'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:38:26 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3452 bytes (10.5% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:39:07 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3416 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:39:15 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3356 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:40:49 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c: In function 'carsMove':
+../application/app.c:72: error: expected expression before 'uint8'
+../application/app.c:72: error: too few arguments to function 'LED_control'
+../application/app.c:74: error: 'carsGreenPin_state' undeclared (first use in this function)
+../application/app.c:74: error: (Each undeclared identifier is reported only once
+../application/app.c:74: error: for each function it appears in.)
+../application/app.c:74: error: 'LED_TURN_ON' undeclared (first use in this function)
+../application/app.c:75: error: 'carsYellowPin_state' undeclared (first use in this function)
+../application/app.c:75: error: expected ')' before 'state'
+../application/app.c:75: error: too few arguments to function 'LED_control'
+../application/app.c:76: error: expected expression before 'LED_state'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:41:02 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c: In function 'carsMove':
+../application/app.c:72: error: expected expression before 'uint8'
+../application/app.c:72: error: too few arguments to function 'LED_control'
+../application/app.c:74: error: 'carsGreenPin_state' undeclared (first use in this function)
+../application/app.c:74: error: (Each undeclared identifier is reported only once
+../application/app.c:74: error: for each function it appears in.)
+../application/app.c:75: error: 'carsYellowPin_state' undeclared (first use in this function)
+../application/app.c:75: error: expected ')' before 'state'
+../application/app.c:75: error: too few arguments to function 'LED_control'
+../application/app.c:76: error: expected expression before 'LED_state'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:41:20 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c: In function 'carsMove':
+../application/app.c:72: error: expected expression before 'uint8'
+../application/app.c:72: error: too few arguments to function 'LED_control'
+../application/app.c:75: error: 'carsYellowPin_state' undeclared (first use in this function)
+../application/app.c:75: error: (Each undeclared identifier is reported only once
+../application/app.c:75: error: for each function it appears in.)
+../application/app.c:75: error: expected ')' before 'state'
+../application/app.c:75: error: too few arguments to function 'LED_control'
+../application/app.c:76: error: expected expression before 'LED_state'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:41:54 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c: In function 'carsMove':
+../application/app.c:72: error: expected expression before 'uint8'
+../application/app.c:72: error: too few arguments to function 'LED_control'
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:42:52 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building file: ../HAL/led_module/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/led_module/led.d" -MT"HAL/led_module/led.o" -c -o "HAL/led_module/led.o" "../HAL/led_module/led.c"
+Finished building: ../HAL/led_module/led.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3386 bytes (10.3% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:42:58 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3356 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:43:28 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3356 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:43:51 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3356 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:47:38 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3356 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:48:21 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3356 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:48:48 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3356 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:49:28 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3356 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:49:53 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3386 bytes (10.3% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:53:27 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3356 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:32:02 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'pushButtonFunction'
+../application/app.c:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'timerFunction'
+../application/app.c:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'carsNormalMode'
+../application/app.c:21: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'carsMove'
+../application/app.c:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'carsWillStop'
+../application/app.c:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'carsStop'
+../application/app.c:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'carsWillMove'
+../application/app.c: In function 'application':
+../application/app.c:36: warning: implicit declaration of function 'carsNormalMode'
+../application/app.c: In function 'initializeSystem':
+../application/app.c:42: error: 'pushButtonFunction' undeclared (first use in this function)
+../application/app.c:42: error: (Each undeclared identifier is reported only once
+../application/app.c:42: error: for each function it appears in.)
+../application/app.c:58: error: 'timerFunction' undeclared (first use in this function)
+../application/app.c: At top level:
+../application/app.c:68: warning: conflicting types for 'carsNormalMode'
+../application/app.c:36: warning: previous implicit declaration of 'carsNormalMode' was here
+../application/app.c: In function 'carsNormalMode':
+../application/app.c:69: warning: implicit declaration of function 'carsMove'
+../application/app.c:70: warning: implicit declaration of function 'carsWillStop'
+../application/app.c:71: warning: implicit declaration of function 'carsStop'
+../application/app.c:72: warning: implicit declaration of function 'carsWillMove'
+../application/app.c: At top level:
+../application/app.c:75: warning: conflicting types for 'carsMove'
+../application/app.c:69: warning: previous implicit declaration of 'carsMove' was here
+../application/app.c:91: warning: conflicting types for 'carsWillStop'
+../application/app.c:70: warning: previous implicit declaration of 'carsWillStop' was here
+../application/app.c:114: warning: conflicting types for 'carsWillMove'
+../application/app.c:72: warning: previous implicit declaration of 'carsWillMove' was here
+../application/app.c:140: warning: conflicting types for 'carsStop'
+../application/app.c:71: warning: previous implicit declaration of 'carsStop' was here
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:32:46 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3356 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:33:21 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'pushButtonFunction'
+../application/app.c: In function 'initializeSystem':
+../application/app.c:43: error: 'pushButtonFunction' undeclared (first use in this function)
+../application/app.c:43: error: (Each undeclared identifier is reported only once
+../application/app.c:43: error: for each function it appears in.)
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:33:32 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'pushButtonFunction'
+../application/app.c: In function 'initializeSystem':
+../application/app.c:43: error: 'pushButtonFunction' undeclared (first use in this function)
+../application/app.c:43: error: (Each undeclared identifier is reported only once
+../application/app.c:43: error: for each function it appears in.)
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:34:06 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'timerFunction'
+../application/app.c: In function 'initializeSystem':
+../application/app.c:59: error: 'timerFunction' undeclared (first use in this function)
+../application/app.c:59: error: (Each undeclared identifier is reported only once
+../application/app.c:59: error: for each function it appears in.)
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:34:49 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c: In function 'initializeSystem':
+../application/app.c:59: warning: passing argument 1 of 'Timer1_setCallBack' from incompatible pointer type
+../application/app.c: At top level:
+../application/app.c:66: error: conflicting types for 'timerFunction'
+../application/app.c:24: error: previous declaration of 'timerFunction' was here
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:34:57 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c: In function 'initializeSystem':
+../application/app.c:59: warning: passing argument 1 of 'Timer1_setCallBack' from incompatible pointer type
+../application/app.c: At top level:
+../application/app.c:66: error: conflicting types for 'timerFunction'
+../application/app.c:24: error: previous declaration of 'timerFunction' was here
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:35:19 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c:69: error: conflicting types for 'carsNormalMode'
+../application/app.c:25: error: previous declaration of 'carsNormalMode' was here
+../application/app.c:76: error: conflicting types for 'carsMove'
+../application/app.c:26: error: previous declaration of 'carsMove' was here
+../application/app.c:92: error: conflicting types for 'carsWillStop'
+../application/app.c:27: error: previous declaration of 'carsWillStop' was here
+../application/app.c:115: error: conflicting types for 'carsWillMove'
+../application/app.c:29: error: previous declaration of 'carsWillMove' was here
+../application/app.c:141: error: conflicting types for 'carsStop'
+../application/app.c:28: error: previous declaration of 'carsStop' was here
+make: *** [application/app.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:37:53 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+../application/app.c: In function 'carsNormalMode':
+../application/app.c:75: warning: control reaches end of non-void function
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3360 bytes (10.3% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:38:11 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3358 bytes (10.2% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:22:58 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3394 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:47:16 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../test/test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"test/test.d" -MT"test/test.o" -c -o "test/test.o" "../test/test.c"
+../test/test.c: In function 'test_TIMER1_callback':
+../test/test.c:33: warning: implicit declaration of function 'test_LED_module'
+Finished building: ../test/test.c
+ 
+Building file: ../application/app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"application/app.d" -MT"application/app.o" -c -o "application/app.o" "../application/app.c"
+Finished building: ../application/app.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./test/test.o  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+./test/test.o: In function `test_LED_mudule':
+../test/test.c:4: undefined reference to `test_LED_module'
+make: *** [traffic_light_control.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:47:59 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../test/test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"test/test.d" -MT"test/test.o" -c -o "test/test.o" "../test/test.c"
+../test/test.c: In function 'test_TIMER1_callback':
+../test/test.c:33: warning: implicit declaration of function 'test_LED_module'
+Finished building: ../test/test.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./test/test.o  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+./test/test.o: In function `test_LED_mudule':
+../test/test.c:4: undefined reference to `test_LED_module'
+make: *** [traffic_light_control.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:52:53 **** Incremental Build of configuration Debug for project traffic_light_control ****
+make all 
+Building file: ../test/test.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"test/test.d" -MT"test/test.o" -c -o "test/test.o" "../test/test.c"
+Finished building: ../test/test.c
+ 
+Building target: traffic_light_control.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,traffic_light_control.map -mmcu=atmega32 -o "traffic_light_control.elf"  ./test/test.o  ./application/app.o  ./MCAL/timer1_module/timer1.o  ./MCAL/gpio_module/gpio.o  ./HAL/push_button_module/pushButton.o  ./HAL/led_module/led.o  ./main.o   
+Finished building target: traffic_light_control.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S traffic_light_control.elf  >"traffic_light_control.lss"
+Finished building: traffic_light_control.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex traffic_light_control.elf  "traffic_light_control.hex"
+Finished building: traffic_light_control.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 traffic_light_control.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3562 bytes (10.9% Full)
+(.text + .data + .bootloader)
+
+Data:          7 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

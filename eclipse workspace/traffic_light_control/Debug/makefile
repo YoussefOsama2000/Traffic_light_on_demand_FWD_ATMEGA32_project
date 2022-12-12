@@ -8,10 +8,12 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include timer1_module/subdir.mk
--include push_button_module/subdir.mk
--include gpio_module/subdir.mk
+-include test/subdir.mk
 -include application/subdir.mk
+-include MCAL/timer1_module/subdir.mk
+-include MCAL/gpio_module/subdir.mk
+-include HAL/push_button_module/subdir.mk
+-include HAL/led_module/subdir.mk
 -include subdir.mk
 -include objects.mk
 

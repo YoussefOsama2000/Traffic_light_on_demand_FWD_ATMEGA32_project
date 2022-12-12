@@ -20,9 +20,11 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+HAL/led_module \
+HAL/push_button_module \
+MCAL/gpio_module \
+MCAL/timer1_module \
 application \
-gpio_module \
 . \
-push_button_module \
-timer1_module \
+test \
 
